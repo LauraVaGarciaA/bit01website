@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav, .navegacion .compañia, .seguridad, .ayuda, .idioma, .productos, .inicio, .registro{
+    display: inline-block;
+    padding: 3px;
+}
+
+.uber{
+    font-size: 12px;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; ;
+}
+
+.compañia:hover, .seguridad:hover, .ayuda:hover, .idioma:hover, .productos:hover, .inicio:hover, .registro:hover{
+    background-color: black;
+    margin:3px;
+    padding:3px;
+    border-radius: 5px;
+}
+
+nav{
+    background: rgb(206, 146, 255);
+    padding: 10px;
+    display:flex;
+    justify-content:space-around;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 10px;  
+}
+
+
+
