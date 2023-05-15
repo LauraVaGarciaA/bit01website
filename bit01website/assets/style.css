@@ -1,40 +1,345 @@
 *{
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
     margin:0;
-    padding:0;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
-.nav, .navegacion .compañia, .seguridad, .ayuda, .idioma, .productos, .inicio, .registro{
-    display: inline-block;
-    padding: 3px;
+header {
+    position: relative;
+    background-color: rgb(206, 146, 255);
+    height: 70px;
 }
 
-.uber{
-    font-size: 12px;
-    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; ;
+label {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1;
 }
 
-.compañia:hover, .seguridad:hover, .ayuda:hover, .idioma:hover, .productos:hover, .inicio:hover, .registro:hover{
-    background-color: black;
-    margin:3px;
-    padding:3px;
-    border-radius: 5px;
+input {
+    display: none;
 }
 
-nav{
-    background: rgb(206, 146, 255);
-    padding: 10px;
-    display:flex;
-    justify-content:space-around;
+input:checked + nav {
+    background-color: rgb(206, 146, 255);
+    border-radius: 10px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
+    gap: 16px;
+    padding: 16px 0;
+    transform: translateY(0);
+}
+
+nav {
+    position: absolute;
+    transform: translateY(-200%);
+    transition: all 0.5s ease-in-out;
 }
 
 a{
     text-decoration: none;
-    color: white;
-    font-size: 10px;  
+    color:rgb(255, 255, 255);
+    font-size: 18px;  
 }
+
+.uber{
+    font-family: Century Gothic,AppleGothic,sans-serif;
+    color:rgb(255, 255, 255);
+    display:flex;
+    padding: 15px;
+    top:5px;
+    font-size: 18px;
+    font-weight: bold;
+    position:absolute;
+}
+
+.sesion{
+    display:flex;
+    margin-left: 190px;
+    top:20px;
+    font-size: 15px;
+    color: white;
+    align-items: flex-end;
+    position:absolute;
+    font-weight: bold;
+}
+
+.sesion:hover{
+    color:black;
+}
+
+.compañia:hover, .seguridad:hover, .ayuda:hover, .idioma:hover, .producto:hover, .registro:hover{
+    background-color: black;
+    margin: 7px;
+    padding: 7px;
+    border-radius: 3px;
+}
+
+.section_1{
+    background: white;
+    width: 360px;
+    height: 320px;
+}
+
+.container_2{
+    width: 360px;
+    height: 60px;
+    top:25px;
+    display:flex;
+    justify-content: space-around;
+    background-color: black;
+}
+
+.one, .two{
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    display:flex;
+    margin:10px;
+    padding:10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.one:hover, .two:hover{
+    background-color: rgb(206, 146, 255);
+    border-radius: 10px;
+}
+
+.sub_container_3, .sub_container_5{
+    justify-content: center;
+    display:flex;
+}
+
+
+.parr_1, .parr_2, .parr_3, .parr_4, .parr_5{
+    font-size: 12px;
+    text-decoration:underline;
+    cursor:pointer;
+    text-align: center;
+}
+
+.section_2{
+    display:grid;
+    width: 100%;
+    height: 300px;
+    background-image: url(./images/image_1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.section_3{
+    display:grid;
+    width: 100%;
+    height: 220px;
+    background-image: url(./images/image_2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.section_4{
+    display:grid;
+    width: 100%;
+    height: 245px;
+    background-image: url(./images/image_3.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.section_6{
+    height: 160px;
+}
+
+.footer_1{
+    background-color: black;
+    color:white;
+}
+
+.parr_6, .parr_7, .parr_8, .parr_9, .parr_10, .parr_11, .parr_12, .parr_13, .parr_14, .parr_15, .parr_16, .parr_17, .parr_18{
+    font-size: 9px;
+}
+
+.parr_16, .parr_17, .parr_18{
+    text-decoration: underline;
+}
+
+h1{
+    font-size: 20px;
+    text-align:center;
+    margin: 15px;
+    font-weight: bold;
+    color:black;
+    font-family: 'Quicksand', sans-serif;
+}
+
+p{
+    margin: 10px;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+button{
+    font-family: 'Quicksand', sans-serif;
+    margin: 10px;
+    font-size: 16px;
+    width: 250px;
+    height: 40px;
+    color:white;
+    background-color: black;
+    padding: inherit;
+    border-radius: 10px;
+    border:none;
+    cursor:pointer;
+}
+
+h2{
+    margin:25px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Quicksand', sans-serif;
+}
+
+footer{
+    height: 190px;
+    display:flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+h3{
+    font-size: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 768px){
+    .section_1, .container_2, .container_3{
+        width: 100%;
+    }
+
+    .sesion{
+        font-size: 20px;
+    }
+
+    .uber{
+        font-size: 22px;
+    }
+
+    h1{
+        font-size: 23px;
+    }
+
+    p{
+        font-size: 18px;
+    }
+
+    .one, .two{
+        font-size: 20px;
+    }
+
+    .parr_1, .parr_2, .parr_3, .parr_4, .parr_5{
+        font-size: 15px;
+    }
+
+    .container_2{
+        height: 75px;
+    }
+
+    h2{
+        font-size: 23px;
+    }
+
+    h3{
+        font-size: 16px;
+    }
+
+    .parr_6, .parr_7, .parr_8, .parr_9, .parr_10, .parr_11, .parr_12, .parr_13, .parr_14, .parr_15, .parr_16, .parr_17, .parr_18{
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    header {
+    padding-top: 16px;
+    }
+
+    label {
+    display: none;
+    }
+
+    nav {
+    position: unset;
+    transform: translateY(0);
+    display: flex;
+    justify-content: space-evenly;
+    justify-content: end;
+    margin-right: 32px;
+    gap: 32px;
+    }
+
+    .section_1, .container_2, .container_3{
+        width: 100%;
+    }
+
+    .sesion{
+        font-size: 20px;
+    }
+
+    .uber{
+        font-size: 22px;
+    }
+
+    h1{
+        font-size: 28px;
+    }
+
+    p{
+        font-size: 20px;
+    }
+
+    .one, .two{
+        font-size: 22px;
+    }
+
+    .parr_1, .parr_2, .parr_3, .parr_4, .parr_5{
+        font-size: 18px;
+    }
+
+    .container_2{
+        height: 85px;
+    }
+
+    h2{
+        font-size: 23px;
+    }
+
+    h3{
+        font-size: 17px;
+    }
+
+    .parr_6, .parr_7, .parr_8, .parr_9, .parr_10, .parr_11, .parr_12, .parr_13, .parr_14, .parr_15, .parr_16, .parr_17, .parr_18{
+        font-size: 15px;
+    }
+
+}
+
+
+
+
+
 
 
 
