@@ -1,0 +1,158 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    margin:0;
+}
+
+header {
+    display:Flex;
+    background-color: rgb(206, 146, 255);
+    height: 70px;
+}
+
+nav{
+    background-color: rgb(206, 146, 255);
+    gap: 20px;
+    padding: 20px 0;
+    display: flex;
+}
+
+.uber{
+    font-family: Century Gothic,AppleGothic,sans-serif;
+    color:rgb(255, 255, 255);
+    display:flex;
+    padding: 15px;
+    top:5px;
+    font-size: 18px;
+    font-weight: bold;
+    position: absolute;
+    text-decoration: none;
+}
+
+.formulario{
+    border: 1px solid black;
+    background-color:black;
+    text-align: center;
+}
+
+.footer_1{
+    background-color: black;
+    color:white;
+}
+
+.container_1, .container_2, .container_3, .container_4, .container_5{
+    margin: 9px;
+}
+
+.parr_1, .parr_2, .parr_3, .parr_4, .parr_5, .parr_6, .parr_7, .parr_8, .parr_9, .parr_10{
+    font-size: 9px;
+    font-weight: bold;
+}
+
+.parr_11, .parr_12, .parr_13{
+    text-decoration: underline;
+    font-size: 9px;
+    font-weight: bold;
+}
+
+h1{
+    font-size: 25px;
+    text-align: center;
+    color: white;
+}
+
+main{
+    border: 3px solid rgb(206, 146, 255);
+    margin: 8px;
+    padding: 8px;
+    text-align: left;
+    font-size:20px;
+    border-radius: 12px;
+}
+
+h2{
+    font-size: 23px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+footer{
+    height: 190px;
+    display:flex;
+    width: 100%;
+    text-align: center;
+    justify-content: space-around;
+}
+
+h3{
+    font-size: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+@media screen and (min-width: 768px){
+    
+    h1{
+        font-size: 20px;
+    }
+
+    h2{
+        font-size: 20px;
+    }
+    main{
+        text-align:left;
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-top: 100px;
+        margin-bottom: 30px;
+    }
+
+    .parr_1, .parr_2, .parr_3, .parr_4, .parr_5, .parr_6, .parr_7, .parr_8, .parr_9, .parr_10{
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .parr_11, .parr_12, .parr_13{
+        text-decoration: underline;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    footer{
+        margin-top: 250px;
+    }
+
+    h3{
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    main{
+        text-align:left;
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .parr_1, .parr_2, .parr_3, .parr_4, .parr_5, .parr_6, .parr_7, .parr_8, .parr_9, .parr_10{
+        font-size: 15px;
+        font-weight: bold;
+    }
+    
+    .parr_11, .parr_12, .parr_13{
+        text-decoration: underline;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    h3{
+        font-size: 17px;
+    }
+}
