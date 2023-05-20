@@ -38,6 +38,13 @@ nav{
     text-align: center;
 }
 
+/*.boton{
+    color: white;
+    font-weight: bold;
+    margin-left: 90px;
+}*/
+
+
 .footer_1{
     background-color: black;
     color:white;
@@ -94,6 +101,23 @@ h3{
     font-weight: bold;
 }
 
+button{
+    font-family: 'Quicksand', sans-serif;
+    margin: 10px;
+    font-size: 16px;
+    width: 130px;
+    height: 40px;
+    background-color: black;
+    padding: inherit;
+    border-radius: 10px;
+    border:none;
+    cursor:pointer;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    margin-left: 90px;
+}
+
 
 @media screen and (min-width: 768px){
     
@@ -139,6 +163,12 @@ h3{
         margin-right: 100px;
         margin-top: 30px;
         margin-bottom: 30px;
+    }
+
+    .privado{
+        margin-top: 50px;
+        display:flex;
+        justify-content: center;
     }
 
     .parr_1, .parr_2, .parr_3, .parr_4, .parr_5, .parr_6, .parr_7, .parr_8, .parr_9, .parr_10{
