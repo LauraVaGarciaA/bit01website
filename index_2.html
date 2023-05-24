@@ -10,19 +10,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Quicksand:wght@400;700&family=Raleway:wght@300&display=swap" rel="stylesheet">
     <title>Formulario</title>
 </head>
-    <header>
-        <nav>
-            <a href="./index.html" class="uber">Uber Female 💚</a>
-        </nav>
-    </header>
     <body>
+        <header>
+            <nav>
+                <a href="./index.html" class="uber">Uber Female 💚</a>
+            </nav>
+        </header>
         <div class="formulario">
             <h1>Formulario</h1>
         </div>
     <main>
         <section>
             <h2>Regístrate para conducir</h2>
-            <form action="" method="">
+            <form action="" id="myForm">
                 <label for="nombre">
                     <span>Nombre:</span>
                     <input type="text" id="nombre"/>
@@ -34,6 +34,7 @@
                 <label for="departamento">
                     <span>Seleccionar departamento de orígen</span>
                         <select name="departamento" id="departamento">
+                            <option value="ri">Registrar información</option>
                             <option value="am">Amazonas</option>
                             <option value="an">Antioquia</option>
                             <option value="ar">Arauca</option>
@@ -69,8 +70,9 @@
                         </select>
                 </label></br></br>
                 <label for="ciudad">
-                    <span>Seleccionar departamento de orígen</span>
+                    <span>Seleccionar municipio de orígen</span>
                         <select name="ciudad" id="ciudad">
+                            <option value="rn">Registrar información</option>
                             <option value="le">Leticia</option>
                             <option value="md">Medellín</option>
                             <option value="ac">Arauca</option>
@@ -116,17 +118,22 @@
                 <label for="sexo">
                     <span>Seleccionar el sexo</span>
                         <select name="sexo" id="sexo">
+                            <option value="re">Registrar información</option>
                             <option value="ml">Masculino</option>
                             <option value="fm">Femenino</option>
                         </select>
                 </label></br></br>
                 <label for="date">
                     <span>Fecha de nacimiento</span>
-                    <input type="date" name="" id=""/>
+                    <input type="date" name="" id="date"/>
                 </label></br></br>
-                <label class="privado"><input type="checkbox" value="privacidad">He leído y acepto las políticas de privacidad</label></br></br>
+                <label class="privado">
+                    <input type="checkbox" id="aceptar">He leído y acepto las políticas de privacidad
+                </label></br></br>
                 <form class="subcontainer_1">
-                    <button class="boton">Enviar</button>
+                    <button class="boton">
+                       <a href="./index_3.html">Enviar</a>
+                    </button>
                 </form>
                 
             </form>
@@ -162,5 +169,6 @@
             <p class="parr_13">Instagram</p>
         </div>
     </footer>
+    <script src='./assets/main.js'></script>
 </body>
 </html>
