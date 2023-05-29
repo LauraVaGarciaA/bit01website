@@ -16,7 +16,7 @@
             <a href="./index.html" class="uber">Uber Female 💚</a>
         </nav>
     </header>
-        <h1>¡Gracias por registrarte en Uber Female!💚🚗</h1>
+        <h1 id="gracias"></h1>
         <h2>Vamos a procesar tu información</h2>
         <footer class="footer_1">
             <div class="container_1">
@@ -48,5 +48,10 @@
                 <p class="parr_13">Instagram</p>
             </div>
         </footer>
+        <script>
+            let nombres = localStorage.getItem('nombre');
+            const gracias = document.getElementById('gracias')
+            gracias.innerText = `¡Gracias por registrarte en Uber Female!💚🚗 "${nombres}"`;
+        </script>
 </body>
 </html>

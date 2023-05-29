@@ -4,6 +4,8 @@
 let nombres = document.getElementById('nombre');
 nombres.addEventListener('input', (e) =>{
   console.log(e.target.value);
+  let nombres = nombres.value;
+  localStorage.setItem("nombres", nombres);
 });
 
 //APELLIDO//
