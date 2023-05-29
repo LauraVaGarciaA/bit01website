@@ -4,8 +4,6 @@
 let nombres = document.getElementById('nombre');
 nombres.addEventListener('input', (e) =>{
   console.log(e.target.value);
-  let nombres = nombres.value;
-  localStorage.setItem("nombres", nombres);
 });
 
 //APELLIDO//
@@ -92,7 +90,13 @@ privacidad.addEventListener('input', (e) =>{
   console.log(e.target.value);
 });
 
+
 //VALIDACIONES//
+
+//VARIABLES//
+
+let entrada=false;
+
   //2.0. NOMBRE//
 let formulario = document.getElementById('myForm');
   formulario.addEventListener('submit', (e) =>{
@@ -106,6 +110,8 @@ let formulario = document.getElementById('myForm');
     } else{
       nombres.style.borderColor = "blue";
       nombres.style.outline = "3px solid blue";
+      let nombres = nombres.value;
+      localStorage.setItem("nombres", nombres);
     }
 });
 
