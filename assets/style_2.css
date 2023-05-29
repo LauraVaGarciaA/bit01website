@@ -5,9 +5,11 @@
 
 body{
     margin:0;
+    padding:0;
 }
 
 header {
+    width: 100%;
     display:Flex;
     background-color: rgb(206, 146, 255);
     height: 70px;
@@ -33,7 +35,7 @@ nav{
 }
 
 .formulario{
-    border: 1px solid black;
+    border: 10px solid black;
     background-color:black;
     text-align: center;
 }
@@ -48,44 +50,56 @@ a{
 }
 
 .container_1, .container_2, .container_3, .container_4, .container_5{
-    margin: 9px;
+    margin: 8px;
 }
 
 .parr_1, .parr_2, .parr_3, .parr_4, .parr_5, .parr_6, .parr_7, .parr_8, .parr_9, .parr_10{
-    font-size: 9px;
+    font-size: 7px;
     font-weight: bold;
 }
 
 .parr_11, .parr_12, .parr_13{
     text-decoration: underline;
-    font-size: 9px;
+    font-size: 7px;
     font-weight: bold;
 }
 
 h1{
-    font-size: 25px;
+    font-size: 22px;
     text-align: center;
     color: white;
 }
 
 main{
     border: 3px solid rgb(206, 146, 255);
-    margin: 8px;
-    padding: 8px;
+    width: 90%;
+    margin: 10px;
+    padding: 10px;
     text-align: left;
-    font-size:20px;
     border-radius: 12px;
+    margin-left: 18px;
 }
 
 h2{
-    font-size: 23px;
+    font-size: 18px;
     text-align: center;
     font-weight: bold;
+    margin: 15px;
 }
 
+label{
+    font-size: 15px;
+    font-weight: 700;
+}
+
+input, select{
+    font-size: 15px;
+    border-radius: 7px;
+
+}
 
 footer{
-    height: 190px;
+    height: 140px;
     display:flex;
     width: 100%;
     text-align: center;
@@ -93,7 +107,7 @@ footer{
 }
 
 h3{
-    font-size: 10px;
+    font-size: 8px;
     text-align: center;
     font-weight: bold;
 }
@@ -101,7 +115,7 @@ h3{
 button{
     font-family: 'Quicksand', sans-serif;
     margin: 10px;
-    font-size: 16px;
+    font-size: 12px;
     width: 130px;
     height: 40px;
     background-color: black;
@@ -112,49 +126,68 @@ button{
     align-items: center;
     color: white;
     font-weight: bold;
-    margin-left: 90px;
+    margin-left: 60px;
 }
 
 
 @media screen and (min-width: 768px){
-
     .uber{
     font-size: 22px;
     }
+
+    .formulario{
+        height: 90px;
+    }
     
     h1{
-        font-size: 20px;
+        font-size: 25px;
     }
 
     h2{
-        font-size: 20px;
+        font-size: 25px;
+        margin: 20px;
     }
+
+    label{
+        font-size: 22px;
+        font-weight: 700;
+    }
+    
+    input, select{
+        font-size: 22px;
+        border-radius: 7px;
+    
+    }
+
     main{
+        width: 80%;
         text-align:left;
-        margin-left: 100px;
-        margin-right: 100px;
-        margin-top: 100px;
+        margin-left: 80px;
+        margin-right: 80px;
+        margin-top: 50px;
         margin-bottom: 30px;
     }
 
     .parr_1, .parr_2, .parr_3, .parr_4, .parr_5, .parr_6, .parr_7, .parr_8, .parr_9, .parr_10{
-        font-size: 15px;
+        font-size: 12px;
         font-weight: bold;
     }
 
     .parr_11, .parr_12, .parr_13{
         text-decoration: underline;
-        font-size: 15px;
+        font-size: 12px;
         font-weight: bold;
     }
 
     .boton{
-        margin-left: 190px;
+        margin-left: 200px;
+        font-size: 22px;
     }
 
 
     footer{
         margin-top: 250px;
+        height: 190px;
     }
 
     h3{
@@ -163,7 +196,33 @@ button{
 }
 
 @media screen and (min-width: 1024px){
+
+     .formulario{
+        height: 110px;
+    }
+
+    h1{
+        font-size: 30px;
+    }
+
+    h2{
+        font-size: 26px;
+        margin: 25px;
+    }
+
+    label{
+        font-size: 25px;
+        font-weight: 700;
+    }
+    
+    input, select{
+        font-size: 25px;
+        border-radius: 7px;
+    
+    }
+
     main{
+        width: 80%;
         text-align:left;
         margin-left: 100px;
         margin-right: 100px;
@@ -177,6 +236,10 @@ button{
         justify-content: center;
     }
 
+    footer{
+        height: 200px;
+    }
+
     .parr_1, .parr_2, .parr_3, .parr_4, .parr_5, .parr_6, .parr_7, .parr_8, .parr_9, .parr_10{
         font-size: 15px;
         font-weight: bold;
@@ -189,10 +252,10 @@ button{
     }
 
     .boton{
-        margin-left: 450px;
+        margin-left: 300px;
     }
 
     h3{
-        font-size: 17px;
+        font-size: 18px;
     }
 }

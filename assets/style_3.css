@@ -5,9 +5,11 @@
 
 body{
     margin:0;
+    padding:0;
 }
 
 header {
+    width: 100%;
     display:Flex;
     background-color: rgb(206, 146, 255);
     height: 70px;
@@ -34,21 +36,23 @@ nav{
 
 h1{
     text-align: center;
-    margin: 40px;
-    font-size: 40px;
+    margin: 60px;
+    font-size: 30px;
 }
 
 h2{
     text-align: center;
-    margin: 50px;
+    margin: 60px;
+    font-size: 25px;
 }
 
 footer{
-    height: 190px;
+    height: 140px;
     display:flex;
     width: 100%;
     text-align: center;
     justify-content: space-around;
+    margin-top: 200px;
 }
 
 .footer_1{
@@ -61,18 +65,18 @@ footer{
 }
 
 .parr_1, .parr_2, .parr_3, .parr_4, .parr_5, .parr_6, .parr_7, .parr_8, .parr_9, .parr_10{
-    font-size: 9px;
+    font-size: 7px;
     font-weight: bold;
 }
 
 .parr_11, .parr_12, .parr_13{
     text-decoration: underline;
-    font-size: 9px;
+    font-size: 7px;
     font-weight: bold;
 }
 
 h3{
-    font-size: 10px;
+    font-size: 8px;
     text-align: center;
     font-weight: bold;
 }
@@ -84,12 +88,12 @@ h3{
 
     h1{
         margin: 80px;
-        font-size: 60px;
+        font-size: 40px;
     }
 
     h2{
         margin: 100px;
-        font-size: 40px;
+        font-size: 30px;
     }
 
     .parr_1, .parr_2, .parr_3, .parr_4, .parr_5, .parr_6, .parr_7, .parr_8, .parr_9, .parr_10{
@@ -105,6 +109,7 @@ h3{
 
     footer{
         margin-top: 250px;
+        height: 200px;
     }
 
     h3{
@@ -113,6 +118,17 @@ h3{
 }
 
 @media screen and (min-width: 1024px){
+
+    h1{
+        margin: 90px;
+        font-size: 50px;
+    }
+
+    h2{
+        margin: 100px;
+        font-size: 40px;
+    }
+
     .parr_1, .parr_2, .parr_3, .parr_4, .parr_5, .parr_6, .parr_7, .parr_8, .parr_9, .parr_10{
         font-size: 15px;
         font-weight: bold;
