@@ -1,8 +1,8 @@
 'use strict'
 
 //NOMBRE//
-let nombres = document.getElementById('nombre');
-nombres.addEventListener('input', (e) =>{
+let $nombres = document.getElementById('nombre');
+$nombres.addEventListener('input', (e) =>{
   console.log(e.target.value);
 });
 
@@ -93,25 +93,26 @@ privacidad.addEventListener('input', (e) =>{
 
 //VALIDACIONES//
 
-//VARIABLES//
-
-let entrada=false;
+//VARIABLES/
 
   //2.0. NOMBRE//
 let formulario = document.getElementById('myForm');
   formulario.addEventListener('submit', (e) =>{
     e.preventDefault();
     let regexText = /^[A-Za-z]+$/; //Validación que solo se pueden poner carácteres de la A a la Z//
+    let entrada=false;
 
-    if (nombres.value.length < 3 || !regexText.test(nombres.value)){
-      nombres.style.borderColor = "red";
-      nombres.style.outline = "3px solid red";
+    if ($nombres.value.length < 3 || !regexText.test($nombres.value)){
+      $nombres.style.borderColor = "red";
+      $nombres.style.outline = "3px solid red";
+      entrada=true;
+
 
     } else{
-      nombres.style.borderColor = "blue";
-      nombres.style.outline = "3px solid blue";
-      let nombres = nombres.value;
-      localStorage.setItem("nombres", nombres);
+      $nombres.style.borderColor = "blue";
+      $nombres.style.outline = "3px solid blue";
+      let nombre = $nombres.value;
+      localStorage.setItem("nombre", nombre);
     }
 });
 
@@ -120,10 +121,12 @@ let formulario = document.getElementById('myForm');
   formulario1.addEventListener('submit', (e) =>{
     e.preventDefault();
     let regexText = /^[A-Za-z]+$/; //Validación que solo se pueden poner carácteres de la A a la Z//
+    let entrada=false;
 
     if (apellidos.value.length < 3 || !regexText.test(apellidos.value)){
       apellidos.style.borderColor = "red";
       apellidos.style.outline = "3px solid red";
+      entrada=true;
 
     } else{
       apellidos.style.borderColor = "blue";
@@ -135,6 +138,7 @@ let formulario = document.getElementById('myForm');
   let formulario2 = document.getElementById("myForm");
   formulario2.addEventListener('submit', (e) => {
     e.preventDefault();
+    let entrada=false;
     
     if (departamento.value=="") {
       departamento.style.borderColor = "red"
@@ -152,6 +156,7 @@ let formulario = document.getElementById('myForm');
 let formulario3 = document.getElementById("myForm");
 formulario3.addEventListener('submit', (e) => {
   e.preventDefault();
+  let entrada=false;
   
   if (ciudad.value=="") {
     ciudad.style.borderColor = "red"
@@ -169,10 +174,12 @@ formulario3.addEventListener('submit', (e) => {
   formulario5.addEventListener('submit', (e) =>{
     e.preventDefault();
     let regexNumber = /^\d{10}$/; //Validación que solo se pueden poner carácteres de la A a la Z//
+    let entrada=false;
 
     if (celular.value.length < 3 || !regexNumber.test(celular.value)){
       celular.style.borderColor = "red";
       celular.style.outline = "3px solid red";
+      entrada=true;
 
     } else{
       celular.style.borderColor = "blue";
@@ -185,10 +192,12 @@ let formulario6 = document.getElementById('myForm');
   formulario5.addEventListener('submit', (e) =>{
     e.preventDefault();
     let regexEmail = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/; //Validación que solo se pueden poner carácteres de la A a la Z//
+    let entrada=false;
 
     if (email.value.length < 3 || !regexEmail.test(email.value)){
       email.style.borderColor = "red";
       email.style.outline = "3px solid red";
+      entrada=true;
 
     } else{
       email.style.borderColor = "blue";
@@ -200,6 +209,7 @@ let formulario6 = document.getElementById('myForm');
 let formulario7 = document.getElementById("myForm");
 formulario7.addEventListener('submit', (e) => {
   e.preventDefault();
+  let entrada=false;
   
   if (sexo.value=="") {
     sexo.style.borderColor = "red"
@@ -216,6 +226,7 @@ formulario7.addEventListener('submit', (e) => {
 let formulario8 = document.getElementById("myForm");
 formulario8.addEventListener('submit', (e) => {
   e.preventDefault();
+  let entrada=false;
 
     if (dateInput.value==""){
       dateInput.style.borderColor = "red";
@@ -232,16 +243,32 @@ formulario8.addEventListener('submit', (e) => {
 let formulario9 = document.getElementById("myForm");
 formulario9.addEventListener('submit', (e) => {
   e.preventDefault();
+  let entrada=false;
 
     if (privacidad.checked==""){
       privacidad.style.borderColor = "red";
       privacidad.style.outline = "3px solid red";
+      entrada=true;
 
     } else{
       privacidad.style.borderColor = "blue";
       privacidad.style.outline = "3px solid blue";
     }
+
+    if (entrada==true){
+      alert('El formulario no está completo');
+
+    }else{
+        window.location.href ="index_3.html"
+      }
+    
 });
+  
+
+
+
+
+
 
 
 
